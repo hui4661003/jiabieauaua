@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>佳贝爱 - 登录</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <div class="container mx-auto px-4 py-8">
+        <!-- 顶部返回按钮 -->
+        <div class="mb-8">
+            <button onclick="history.back()" class="text-gray-600">
+                <i class="fas fa-arrow-left text-xl"></i>
+            </button>
+        </div>
+
+        <!-- 登录标题 -->
+        <div class="text-center mb-12">
+            <h1 class="text-3xl font-bold text-gray-800 mb-2">欢迎回来</h1>
+            <p class="text-gray-600">登录您的佳贝爱账号</p>
+        </div>
+
+        <!-- 登录表单 -->
+        <div class="bg-white rounded-2xl p-6 shadow-lg">
+            <div class="mb-6">
+                <div class="relative">
+                    <i class="fas fa-mobile-alt absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+                    <input type="tel" 
+                           placeholder="请输入手机号码" 
+                           class="input-field pl-12">
+                </div>
+            </div>
+
+            <div class="mb-6">
+                <div class="relative">
+                    <i class="fas fa-lock absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+                    <input type="password" 
+                           placeholder="请输入密码" 
+                           class="input-field pl-12">
+                </div>
+            </div>
+
+            <div class="flex justify-between items-center mb-6">
+                <label class="flex items-center">
+                    <input type="checkbox" class="form-checkbox h-4 w-4 text-blue-600">
+                    <span class="ml-2 text-sm text-gray-600">记住我</span>
+                </label>
+                <a href="#" class="text-sm text-blue-600">忘记密码？</a>
+            </div>
+
+            <button class="btn-primary w-full mb-6" onclick="window.location.href='home.html'">
+                登录
+            </button>
+
+            <div class="text-center">
+                <p class="text-gray-600">
+                    还没有账号？
+                    <a href="register.html" class="text-blue-600 font-semibold">立即注册</a>
+                </p>
+            </div>
+        </div>
+
+        <!-- 第三方登录 -->
+        <div class="mt-8">
+            <div class="flex items-center justify-center mb-4">
+                <div class="flex-1 border-t border-gray-300"></div>
+                <span class="px-4 text-gray-500 text-sm">其他登录方式</span>
+                <div class="flex-1 border-t border-gray-300"></div>
+            </div>
+
+            <div class="flex justify-center space-x-6">
+                <button class="w-12 h-12 rounded-full bg-gray-100 flex items-center justify-center">
+                    <i class="fab fa-weixin text-green-500 text-xl"></i>
+                </button>
+                <button class="w-12 h-12 rounded-full bg-gray-100 flex items-center justify-center">
+                    <i class="fab fa-qq text-blue-500 text-xl"></i>
+                </button>
+                <button class="w-12 h-12 rounded-full bg-gray-100 flex items-center justify-center">
+                    <i class="fab fa-weibo text-red-500 text-xl"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 

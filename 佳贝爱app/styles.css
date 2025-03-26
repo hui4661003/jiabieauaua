@@ -1,0 +1,109 @@
+/* iPhone 15 模拟器样式 */
+.iphone-container {
+    width: 390px;
+    height: 844px;
+    background: #000;
+    border-radius: 55px;
+    padding: 12px;
+    position: relative;
+    box-shadow: 0 0 50px rgba(0,0,0,0.3);
+}
+
+.iphone-frame {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    border-radius: 45px;
+    overflow: hidden;
+    position: relative;
+}
+
+.iphone-notch {
+    width: 200px;
+    height: 35px;
+    background: #000;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+}
+
+.iphone-screen {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    overflow: hidden;
+}
+
+.iphone-home-indicator {
+    width: 135px;
+    height: 5px;
+    background: #000;
+    position: absolute;
+    bottom: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 3px;
+}
+
+/* 通用样式 */
+:root {
+    --primary-color: #1E88E5;
+    --secondary-color: #64B5F6;
+    --background-color: #F5F7FA;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+/* 页面过渡动画 */
+.page-transition {
+    transition: all 0.3s ease-in-out;
+}
+
+/* 自定义按钮样式 */
+.btn-primary {
+    background: var(--primary-color);
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: var(--secondary-color);
+    transform: translateY(-2px);
+}
+
+/* 卡片样式 */
+.card {
+    background: white;
+    border-radius: 12px;
+    padding: 16px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* 输入框样式 */
+.input-field {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.input-field:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(30, 136, 229, 0.1);
+    outline: none;
+} 

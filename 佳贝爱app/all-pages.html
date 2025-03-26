@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>佳贝爱 - 所有页面预览</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .page-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(390px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            background: #f0f0f0;
+        }
+        .page-frame {
+            background: white;
+            border-radius: 20px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .page-title {
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        .page-iframe {
+            width: 100%;
+            height: 844px;
+            border: none;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .nav-menu {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: white;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            z-index: 1000;
+        }
+        .nav-menu a {
+            display: block;
+            padding: 5px 10px;
+            color: #333;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .nav-menu a:hover {
+            background: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+    <!-- 导航菜单 -->
+    <div class="nav-menu">
+        <a href="#splash">启动页</a>
+        <a href="#login">登录页</a>
+        <a href="#register">注册页</a>
+        <a href="#home">首页</a>
+        <a href="#learn">学习页</a>
+        <a href="#consult">咨询页</a>
+        <a href="#profile">个人中心</a>
+    </div>
+
+    <!-- 页面预览容器 -->
+    <div class="page-container">
+        <!-- 启动页预览 -->
+        <div class="page-frame" id="splash">
+            <div class="page-title">启动页 (splash.html)</div>
+            <iframe src="splash.html" class="page-iframe"></iframe>
+        </div>
+
+        <!-- 登录页预览 -->
+        <div class="page-frame" id="login">
+            <div class="page-title">登录页 (login.html)</div>
+            <iframe src="login.html" class="page-iframe"></iframe>
+        </div>
+
+        <!-- 注册页预览 -->
+        <div class="page-frame" id="register">
+            <div class="page-title">注册页 (register.html)</div>
+            <iframe src="register.html" class="page-iframe"></iframe>
+        </div>
+
+        <!-- 首页预览 -->
+        <div class="page-frame" id="home">
+            <div class="page-title">首页 (home.html)</div>
+            <iframe src="home.html" class="page-iframe"></iframe>
+        </div>
+
+        <!-- 学习页预览 -->
+        <div class="page-frame" id="learn">
+            <div class="page-title">学习页 (learn.html)</div>
+            <iframe src="learn.html" class="page-iframe"></iframe>
+        </div>
+
+        <!-- 咨询页预览 -->
+        <div class="page-frame" id="consult">
+            <div class="page-title">咨询页 (consult.html)</div>
+            <iframe src="consult.html" class="page-iframe"></iframe>
+        </div>
+
+        <!-- 个人中心页预览 -->
+        <div class="page-frame" id="profile">
+            <div class="page-title">个人中心 (profile.html)</div>
+            <iframe src="profile.html" class="page-iframe"></iframe>
+        </div>
+    </div>
+
+    <script>
+        // 平滑滚动
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html> 

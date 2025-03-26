@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>佳贝爱 - 页面预览</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .preview-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(390px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            background: #f0f0f0;
+        }
+        .preview-frame {
+            background: white;
+            border-radius: 20px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .preview-title {
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        .preview-iframe {
+            width: 100%;
+            height: 844px;
+            border: none;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div class="preview-container">
+        <!-- 启动页预览 -->
+        <div class="preview-frame">
+            <div class="preview-title">启动页 (splash.html)</div>
+            <iframe src="splash.html" class="preview-iframe"></iframe>
+        </div>
+
+        <!-- 登录页预览 -->
+        <div class="preview-frame">
+            <div class="preview-title">登录页 (login.html)</div>
+            <iframe src="login.html" class="preview-iframe"></iframe>
+        </div>
+
+        <!-- 注册页预览 -->
+        <div class="preview-frame">
+            <div class="preview-title">注册页 (register.html)</div>
+            <iframe src="register.html" class="preview-iframe"></iframe>
+        </div>
+
+        <!-- 首页预览 -->
+        <div class="preview-frame">
+            <div class="preview-title">首页 (home.html)</div>
+            <iframe src="home.html" class="preview-iframe"></iframe>
+        </div>
+
+        <!-- 学习页预览 -->
+        <div class="preview-frame">
+            <div class="preview-title">学习页 (learn.html)</div>
+            <iframe src="learn.html" class="preview-iframe"></iframe>
+        </div>
+
+        <!-- 咨询页预览 -->
+        <div class="preview-frame">
+            <div class="preview-title">咨询页 (consult.html)</div>
+            <iframe src="consult.html" class="preview-iframe"></iframe>
+        </div>
+
+        <!-- 个人中心页预览 -->
+        <div class="preview-frame">
+            <div class="preview-title">个人中心 (profile.html)</div>
+            <iframe src="profile.html" class="preview-iframe"></iframe>
+        </div>
+    </div>
+</body>
+</html> 
