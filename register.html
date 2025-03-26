@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>佳贝爱 - 注册</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <div class="container mx-auto px-4 py-8">
+        <!-- 顶部返回按钮 -->
+        <div class="mb-8">
+            <button onclick="history.back()" class="text-gray-600">
+                <i class="fas fa-arrow-left text-xl"></i>
+            </button>
+        </div>
+
+        <!-- 注册标题 -->
+        <div class="text-center mb-12">
+            <h1 class="text-3xl font-bold text-gray-800 mb-2">创建账号</h1>
+            <p class="text-gray-600">加入佳贝爱，开启智慧育儿之旅</p>
+        </div>
+
+        <!-- 注册表单 -->
+        <div class="bg-white rounded-2xl p-6 shadow-lg">
+            <div class="mb-6">
+                <div class="relative">
+                    <i class="fas fa-mobile-alt absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+                    <input type="tel" 
+                           placeholder="请输入手机号码" 
+                           class="input-field pl-12">
+                </div>
+            </div>
+
+            <div class="mb-6">
+                <div class="relative">
+                    <i class="fas fa-shield-alt absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+                    <input type="text" 
+                           placeholder="请输入验证码" 
+                           class="input-field pl-12">
+                    <button class="absolute right-4 top-1/2 transform -translate-y-1/2 text-blue-600 text-sm">
+                        获取验证码
+                    </button>
+                </div>
+            </div>
+
+            <div class="mb-6">
+                <div class="relative">
+                    <i class="fas fa-lock absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+                    <input type="password" 
+                           placeholder="请设置密码" 
+                           class="input-field pl-12">
+                </div>
+            </div>
+
+            <div class="mb-6">
+                <div class="relative">
+                    <i class="fas fa-lock absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+                    <input type="password" 
+                           placeholder="请确认密码" 
+                           class="input-field pl-12">
+                </div>
+            </div>
+
+            <div class="mb-6">
+                <label class="flex items-start">
+                    <input type="checkbox" class="form-checkbox h-4 w-4 text-blue-600 mt-1">
+                    <span class="ml-2 text-sm text-gray-600">
+                        我已阅读并同意
+                        <a href="#" class="text-blue-600">《用户协议》</a>
+                        和
+                        <a href="#" class="text-blue-600">《隐私政策》</a>
+                    </span>
+                </label>
+            </div>
+
+            <button class="btn-primary w-full mb-6" onclick="window.location.href='home.html'">
+                注册
+            </button>
+
+            <div class="text-center">
+                <p class="text-gray-600">
+                    已有账号？
+                    <a href="login.html" class="text-blue-600 font-semibold">立即登录</a>
+                </p>
+            </div>
+        </div>
+
+        <!-- 第三方注册 -->
+        <div class="mt-8">
+            <div class="flex items-center justify-center mb-4">
+                <div class="flex-1 border-t border-gray-300"></div>
+                <span class="px-4 text-gray-500 text-sm">其他注册方式</span>
+                <div class="flex-1 border-t border-gray-300"></div>
+            </div>
+
+            <div class="flex justify-center space-x-6">
+                <button class="w-12 h-12 rounded-full bg-gray-100 flex items-center justify-center">
+                    <i class="fab fa-weixin text-green-500 text-xl"></i>
+                </button>
+                <button class="w-12 h-12 rounded-full bg-gray-100 flex items-center justify-center">
+                    <i class="fab fa-qq text-blue-500 text-xl"></i>
+                </button>
+                <button class="w-12 h-12 rounded-full bg-gray-100 flex items-center justify-center">
+                    <i class="fab fa-weibo text-red-500 text-xl"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 

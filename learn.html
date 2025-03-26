@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>佳贝爱 - 学习</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <!-- 顶部导航栏 -->
+    <div class="bg-white shadow-sm fixed top-0 left-0 right-0 z-50">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <img src="https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?w=40" 
+                         alt="Logo" 
+                         class="w-10 h-10 rounded-full">
+                    <span class="ml-2 text-xl font-bold text-gray-800">佳贝爱</span>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <button class="text-gray-600">
+                        <i class="fas fa-bell text-xl"></i>
+                    </button>
+                    <button class="text-gray-600">
+                        <i class="fas fa-search text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 主要内容区域 -->
+    <div class="container mx-auto px-4 pt-20 pb-16">
+        <!-- 课程分类 -->
+        <div class="mb-6">
+            <div class="flex space-x-4 overflow-x-auto pb-2">
+                <button class="px-4 py-2 bg-blue-600 text-white rounded-full whitespace-nowrap">
+                    全部课程
+                </button>
+                <button class="px-4 py-2 bg-white text-gray-600 rounded-full whitespace-nowrap">
+                    育儿基础
+                </button>
+                <button class="px-4 py-2 bg-white text-gray-600 rounded-full whitespace-nowrap">
+                    亲子互动
+                </button>
+                <button class="px-4 py-2 bg-white text-gray-600 rounded-full whitespace-nowrap">
+                    营养健康
+                </button>
+                <button class="px-4 py-2 bg-white text-gray-600 rounded-full whitespace-nowrap">
+                    心理发展
+                </button>
+            </div>
+        </div>
+
+        <!-- 课程列表 -->
+        <div class="space-y-4">
+            <!-- 课程卡片 1 -->
+            <div class="bg-white rounded-xl overflow-hidden shadow-sm">
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=400" 
+                         alt="课程封面" 
+                         class="w-full h-48 object-cover">
+                    <div class="absolute top-2 right-2 bg-blue-600 text-white px-2 py-1 rounded-full text-sm">
+                        热门
+                    </div>
+                </div>
+                <div class="p-4">
+                    <div class="flex items-center mb-2">
+                        <span class="text-sm text-blue-600 bg-blue-50 px-2 py-1 rounded">育儿基础</span>
+                        <span class="text-sm text-gray-500 ml-2">已售 2.3k</span>
+                    </div>
+                    <h4 class="font-semibold text-gray-800 mb-2">科学育儿入门课程</h4>
+                    <p class="text-sm text-gray-600 mb-4">专业导师一对一指导，让育儿更轻松</p>
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center">
+                            <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=30" 
+                                 alt="讲师头像" 
+                                 class="w-6 h-6 rounded-full">
+                            <span class="ml-2 text-sm text-gray-600">王老师</span>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="text-blue-600 font-semibold mr-2">¥299</span>
+                            <button class="btn-primary px-4 py-1 text-sm">立即学习</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 课程卡片 2 -->
+            <div class="bg-white rounded-xl overflow-hidden shadow-sm">
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1519682577862-22b62b24e493?w=400" 
+                         alt="课程封面" 
+                         class="w-full h-48 object-cover">
+                    <div class="absolute top-2 right-2 bg-green-600 text-white px-2 py-1 rounded-full text-sm">
+                        新课
+                    </div>
+                </div>
+                <div class="p-4">
+                    <div class="flex items-center mb-2">
+                        <span class="text-sm text-green-600 bg-green-50 px-2 py-1 rounded">亲子互动</span>
+                        <span class="text-sm text-gray-500 ml-2">已售 1.8k</span>
+                    </div>
+                    <h4 class="font-semibold text-gray-800 mb-2">亲子互动游戏课程</h4>
+                    <p class="text-sm text-gray-600 mb-4">寓教于乐，让亲子关系更亲密</p>
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center">
+                            <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=30" 
+                                 alt="讲师头像" 
+                                 class="w-6 h-6 rounded-full">
+                            <span class="ml-2 text-sm text-gray-600">李老师</span>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="text-blue-600 font-semibold mr-2">¥199</span>
+                            <button class="btn-primary px-4 py-1 text-sm">立即学习</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 课程卡片 3 -->
+            <div class="bg-white rounded-xl overflow-hidden shadow-sm">
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1519682577862-22b62b24e493?w=400" 
+                         alt="课程封面" 
+                         class="w-full h-48 object-cover">
+                    <div class="absolute top-2 right-2 bg-purple-600 text-white px-2 py-1 rounded-full text-sm">
+                        限时
+                    </div>
+                </div>
+                <div class="p-4">
+                    <div class="flex items-center mb-2">
+                        <span class="text-sm text-purple-600 bg-purple-50 px-2 py-1 rounded">营养健康</span>
+                        <span class="text-sm text-gray-500 ml-2">已售 1.5k</span>
+                    </div>
+                    <h4 class="font-semibold text-gray-800 mb-2">宝宝营养均衡的饮食建议</h4>
+                    <p class="text-sm text-gray-600 mb-4">专业营养师指导，让宝宝健康成长</p>
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center">
+                            <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=30" 
+                                 alt="讲师头像" 
+                                 class="w-6 h-6 rounded-full">
+                            <span class="ml-2 text-sm text-gray-600">张老师</span>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="text-blue-600 font-semibold mr-2">¥159</span>
+                            <button class="btn-primary px-4 py-1 text-sm">立即学习</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 底部导航栏 -->
+    <div class="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-around py-3">
+                <a href="home.html" class="flex flex-col items-center text-gray-600">
+                    <i class="fas fa-home text-xl"></i>
+                    <span class="text-xs mt-1">首页</span>
+                </a>
+                <a href="learn.html" class="flex flex-col items-center text-blue-600">
+                    <i class="fas fa-book text-xl"></i>
+                    <span class="text-xs mt-1">学习</span>
+                </a>
+                <a href="consult.html" class="flex flex-col items-center text-gray-600">
+                    <i class="fas fa-comments text-xl"></i>
+                    <span class="text-xs mt-1">咨询</span>
+                </a>
+                <a href="profile.html" class="flex flex-col items-center text-gray-600">
+                    <i class="fas fa-user text-xl"></i>
+                    <span class="text-xs mt-1">我的</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 
